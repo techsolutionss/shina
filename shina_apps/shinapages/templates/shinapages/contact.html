@@ -1,0 +1,43 @@
+{% extends "frontend/base.html" %} 
+{% load static i18n %}
+{% block extra_css %}
+    <style>
+        .main-container{
+            height: 50vh;
+            background: gray;
+        }
+    </style>
+{% endblock %} 
+
+{% block content %}
+    <div class="container">
+        <div class="main-banner-area">
+            <form action="">
+                <div class="form-group mb-3">
+                    <label>Firstname</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <button class="btn btn-primary mt-3" id="add-input">add input</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+    if($(window).innerWidth() >= 768){
+      
+    }  
+    $("#add-input").on("click", function(){
+        current_num = $(".form-group").length
+        console.log(current_num)
+        var form_element = "<div class='form-group mb-3'>"
+        form_element+= `<label>Firstname ${current_num+1}</label>`
+        form_element+= "<input type='text' class='form-control'>"
+        form_element+= "</div>" 
+        $(".main-banner-area form").append(form_element)    
+    })
+    
+    
+  </script>
+{% endblock %}

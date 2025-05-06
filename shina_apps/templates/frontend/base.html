@@ -1,5 +1,6 @@
 {% load static i18n %}<!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,12 +74,139 @@
                 <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
         </div>
+=======
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="msvalidate.01" content="6DAE01F441D52BE005A29B047CF5B1E5" />
+
+    {% block title %}
+    <title>
+      {% block page_title %} shinatrust {% endblock %}{{ site.name }}
+    </title>
+    {% endblock %} {% block metas %}
+    <meta
+      name="description"
+      content="{% block meta_descrition %} shinatrust {% endblock %}"
+    />
+    <meta
+      name="keywords"
+      content="{% block page_meta_keywords %} shinatrust  {% endblock %}"
+    />
+    <meta name="author" content="shinatrust" />
+
+    {% block meta_social %}
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="{{ request.scheme }}://{{ request.get_host }}{{ request.get_full_path }}"
+    />
+    <meta
+      property="og:title"
+      content="{% block meta_og_title %}{{ site.name }}{% endblock %}"
+    />
+    <meta
+      property="og:description"
+      content="{% block meta_og_description %} shinatrust {% endblock %}"
+    />
+    <meta property="og:locale" content="en" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    {% endblock %} {% block extra_metas %} {% endblock %} {% endblock metas %}
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'frontend/images/favicon.png' %}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3e04c5a057.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="{% static 'frontend/css/slick.css' %}" rel="stylesheet" />
+
+    <!-- Links of CSS files -->
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/bootstrap.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'frontend/css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/animate.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/meanmenu.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'frontend/css/remixicon.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/flaticon.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/odometer.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/owl.carousel.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/owl.theme.default.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/magnific-popup.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'frontend/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/dark.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontend/css/responsive.css' %}" />
+    {% block extra_css %}{% endblock %} {% block extra_head %}{% endblock %}
+  </head>
+  <body>
+    {% block schema_markup %}{% endblock %}
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+>>>>>>> 9807f5a (changes)
     </div>
     <!-- End Preloader Area -->
 
     <div class="layer"></div>
     <!-- Mobile menu overlay mask -->
 
+<<<<<<< HEAD
     {% block header_navigation %}
         {% include 'frontend/layouts/header_navigation.html' %}
     {% endblock %}
@@ -109,6 +237,48 @@
     <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
     <script src="{% static 'frontend/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'frontend/js/jquery.meanmenu.js' %}"></script> 
+=======
+    {% block header_navigation %} 
+      {% include 'frontend/layouts/header_navigation.html' %} 
+    {% endblock %} 
+    {% block hero_in %} {% endblock %}
+
+    <main>
+      {% block breadcrumb %} {% endblock %} 
+      {% block content %} {% endblock %}
+    </main>
+    <!-- End main -->
+
+    {% block modals %}{% endblock %} 
+    {% block footer %}
+      {% include 'frontend/layouts/footer.html' %}
+    {% endblock %}
+    <!-- Start Go Top Area -->
+      <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
+      </div>
+    <!-- End Go Top Area -->
+    
+    <div id="toTop"></div>
+    <!-- Back to top button -->
+    
+    <!-- Search Menu -->
+    <!-- <div class="search-overlay-menu">
+      <span class="search-overlay-close"
+        ><i class="icon_set_1_icon-77"></i
+      ></span>
+      <form role="search" id="searchform" action="" method="GET">
+        <input value="" name="q" type="search" placeholder="{% trans "Search"
+        %}..." />
+        <button type="submit"><i class="icon_set_1_icon-78"></i></button>
+      </form>
+    </div> -->
+    <!-- End Search Menu -->
+
+    <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
+    <script src="{% static 'frontend/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'frontend/js/jquery.meanmenu.js' %}"></script>
+>>>>>>> 9807f5a (changes)
     <script src="{% static 'frontend/js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'frontend/js/jquery.appear.js' %}"></script>
     <script src="{% static 'frontend/js/odometer.min.js' %}"></script>
@@ -122,7 +292,12 @@
     <script src="{% static 'frontend/js/wow.min.js' %}"></script>
     <script src="{% static 'frontend/js/main.js' %}"></script>
 
+<<<<<<< HEAD
     {% block extra_js %}
     {% endblock %}
 </body>
+=======
+    {% block extra_js %} {% endblock %}
+  </body>
+>>>>>>> 9807f5a (changes)
 </html>

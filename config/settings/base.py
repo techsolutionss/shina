@@ -49,6 +49,7 @@ USE_TZ = True
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
+<<<<<<< HEAD
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -57,6 +58,22 @@ DATABASES = {
         'PASSWORD': env('DATABASE_PASSWORD'),
         'HOST': env('DATABASE_HOST', default='localhost'),
         'PORT': '3306'
+=======
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': env('DATABASE_NAME'),
+#         'USER': env('DATABASE_USER'),
+#         'PASSWORD': env('DATABASE_PASSWORD'),
+#         'HOST': env('DATABASE_HOST', default='localhost'),
+#         'PORT': '3306'
+#     }
+# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase.db',
+>>>>>>> 9807f5a (changes)
     }
 }
  
@@ -281,5 +298,9 @@ LOGGING = {
     "root": {"level": "INFO", "handlers": ["console", "file"]},
 
 }
+<<<<<<< HEAD
 # SENDINBLUE_KEY=env('DJANGO_SENDINBLUE_API_KEY')
+=======
+SENDINBLUE_KEY=env('DJANGO_SENDINBLUE_API_KEY')
+>>>>>>> 9807f5a (changes)
  
