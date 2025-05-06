@@ -398,6 +398,19 @@ Preloader Area CSS
 }
 
 /*================================================
+Nav Bar Nav Area
+=================================================*/
+/*.navbar-list li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: red;
+}*/
+.nav-bar-area img {
+  padding-left: 6rem;
+}
+
+/*================================================
 Main Banner Area CSS
 =================================================*/
 .main-banner-area {
@@ -409,7 +422,7 @@ Main Banner Area CSS
   padding-bottom: 100px;
 }
 
-.main-banner-area .container {
+.main-banner-area .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -5247,13 +5260,13 @@ Go Top CSS
 }
 
 .banner-btn a {
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 2.6rem;
 }
 
 .default-btn h3 {
   color: #ffffff;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .main-responsive-menu.logo img {
